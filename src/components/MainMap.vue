@@ -175,7 +175,7 @@ function updateMarkers() {
             minZoom = -Math.log2(1/(chunkFrequency * 256))
         }
 
-        if (map.getZoom() >= minZoom){
+        if ((map.getZoom() + 2) >= minZoom){
             const chunks: ChunkPos[] = set.placement.getPotentialStructureChunks(settingsStore.seed, minChunk[0], minChunk[1], maxChunk[0], maxChunk[1])
 
             for (const chunk of chunks) {
