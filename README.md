@@ -29,8 +29,10 @@ Contributions are welcome! For significant feature additions please ask beforeha
 1. Install python dependencies: `pip install -r requirements.txt`
 2. Install node dependencies: `npm i`
 3. Create vanilla datapack zip files: `npm run createZips`
-4. Start dev server: `npm run dev` and open http://localhost:5173/ 
-   - **dev environment requires a [browser supporting ECMAScript modules in webworkers](https://caniuse.com/mdn-api_worker_worker_ecmascript_modules)**
-
-5. Build final page: `npm run build`
-6. Test build version: `npm run preview` and open https://localhost:4173/
+4. Install electron and electron-vita: `npm install --save-dev electron electron-vite -D`
+5. Install vite-plugin-electron: `npm install vite-plugin-electron -D`
+6. Install electron-builder: `npm install electron-builder -D`
+7. Start dev server: `npm run electron:dev`
+8. Build final page: `npm run electron:build`
+9. Run builded binary: ``
+   - ** If you get a download error, you can continue the download by running the build as a administrator. **
